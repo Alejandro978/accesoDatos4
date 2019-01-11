@@ -22,7 +22,8 @@
         <activity android:name=".consultaSimple" />
         <activity android:name=".anyadirProducto" />
         <activity android:name=".editarProducto" />
-        <activity android:name=".productosUsuario"></activity>
+        <activity android:name=".productosUsuario" />
+        <activity android:name=".MisFavoritos"></activity>
     </application>
 
 </manifest>

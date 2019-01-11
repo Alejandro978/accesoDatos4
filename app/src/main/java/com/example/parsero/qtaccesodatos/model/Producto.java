@@ -2,7 +2,7 @@ package com.example.parsero.qtaccesodatos.model;
 
 public class Producto {
 
-    private String nombreUsuario;
+    public String nombreUsuario;
     private String nombre;
     private String descripcion;
     private String categoría;

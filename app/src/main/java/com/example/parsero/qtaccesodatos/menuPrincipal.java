@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class menuPrincipal extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnConsultarUsuarios, btnConsultaByNombre, btnEditarUsuario, btnLogout, btnAñadirProducto, btnEditarProductos;
+    Button btnConsultarUsuarios, btnConsultaByNombre, btnEditarUsuario, btnLogout, btnAñadirProducto, btnEditarProductos,btnMisFavoritos;
     private FirebaseAuth mAuth;
 
     @Override
@@ -34,6 +34,9 @@ public class menuPrincipal extends AppCompatActivity implements View.OnClickList
 
         btnEditarProductos = (Button) findViewById(R.id.btnEditarProcutos);
         btnEditarProductos.setOnClickListener(this);
+
+        btnMisFavoritos = (Button) findViewById(R.id.btnMisFavoritos);
+        btnMisFavoritos.setOnClickListener(this);
 
         btnLogout = (Button) findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(this);
@@ -70,6 +73,11 @@ public class menuPrincipal extends AppCompatActivity implements View.OnClickList
             case R.id.btnConsultaByNombre:
                 Intent p = new Intent(menuPrincipal.this, productosUsuario.class);
                 startActivity(p);
+                break;
+
+            case R.id.btnMisFavoritos:
+                Intent x = new Intent(menuPrincipal.this, MisFavoritos.class);
+                startActivity(x);
                 break;
         }
     }

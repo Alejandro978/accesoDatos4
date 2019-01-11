@@ -44,6 +44,13 @@
         android:text="Editar mis prodcutos" />
 
     <Button
+        android:id="@+id/btnMisFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mis favoritos" />
+
+    <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
